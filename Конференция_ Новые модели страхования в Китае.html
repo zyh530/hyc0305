@@ -1,0 +1,3785 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)https://web-conference.zava.asia/ -->
+<html lang="zh-CN" class="translated-ltr">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Конференция: Новые модели страхования в Китае</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f7fc;
+      color: #1a2639;
+      line-height: 1.5;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 32px;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      overflow: hidden;
+      padding: 2rem 2rem 3rem;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #0b2545;
+      margin: 1rem 0 0.5rem;
+    }
+
+    h1 span {
+      display: block;
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #2d4059;
+      margin-top: 0.5rem;
+      border-left: 5px solid #1e4f7a;
+      padding-left: 1rem;
+      background: #eef3fa;
+      border-radius: 0 12px 12px 0;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #0b2545;
+      margin: 2.5rem 0 1rem;
+      border-bottom: 3px solid #1e4f7a;
+      padding-bottom: 0.5rem;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #1e4f7a;
+      margin: 1.5rem 0 0.8rem;
+    }
+
+    .grid-2,
+    .grid-3 {
+      display: grid;
+      gap: 2rem;
+    }
+
+    .grid-2 {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .grid-3 {
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+
+    .hero-img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 24px;
+      margin: 1.5rem 0 0.5rem;
+      box-shadow: 0 12px 25px -8px rgba(0, 35, 70, 0.2);
+      background: #d9e2ef;
+      display: block;
+    }
+
+    .info-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem 3rem;
+      background: #eef3fa;
+      padding: 1.5rem 2rem;
+      border-radius: 40px;
+      margin: 2rem 0 1rem;
+      font-size: 1.1rem;
+      font-weight: 500;
+      border: 1px solid #cbd6e6;
+    }
+
+    .info-item {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .info-item .icon {
+      font-size: 1.8rem;
+    }
+
+    .price-tag {
+      background: #1e4f7a;
+      color: white;
+      padding: 0.4rem 1.2rem;
+      border-radius: 60px;
+      font-weight: 700;
+      margin-left: auto;
+    }
+
+    .desc {
+      font-size: 1.1rem;
+      color: #2d4059;
+      margin: 1.5rem 0;
+      background: #f9fbfd;
+      padding: 1.5rem;
+      border-radius: 24px;
+      border: 1px solid #dde5ef;
+    }
+
+    .topic-list,
+    .speaker-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 0.8rem 1.5rem;
+      margin: 1.5rem 0;
+    }
+
+    .topic-list li,
+    .speaker-list li {
+      padding-left: 1.8rem;
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="%231e4f7a"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>') left center no-repeat;
+      background-size: 1.2rem;
+      line-height: 1.4;
+    }
+
+    .schedule-day {
+      background: #f9fbfd;
+      border-radius: 28px;
+      padding: 1.5rem;
+      border: 1px solid #dde5ef;
+      transition: all 0.2s;
+    }
+
+    .schedule-day:hover {
+      box-shadow: 0 15px 30px -10px rgba(30, 79, 122, 0.15);
+    }
+
+    .day-title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #0b2545;
+      margin-bottom: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .day-title .date {
+      background: #1e4f7a;
+      color: white;
+      font-size: 0.9rem;
+      padding: 0.3rem 1rem;
+      border-radius: 40px;
+      margin-left: 1rem;
+    }
+
+    .session {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0.8rem 0;
+      border-bottom: 1px dashed #cbd6e6;
+    }
+
+    .session:last-child {
+      border-bottom: none;
+    }
+
+    .time {
+      width: 110px;
+      font-weight: 600;
+      color: #1e4f7a;
+    }
+
+    .session-title {
+      flex: 1;
+      font-weight: 500;
+    }
+
+    .session-desc {
+      font-size: 0.9rem;
+      color: #4f658d;
+      width: 100%;
+      margin-top: 0.2rem;
+      padding-left: 110px;
+    }
+
+    .footer-block {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      background: #0b2545;
+      color: white;
+      border-radius: 36px;
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+
+    .footer-block .price-large {
+      font-size: 2.5rem;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .btn {
+      background: white;
+      color: #0b2545;
+      border: none;
+      padding: 1rem 2.5rem;
+      font-size: 1.2rem;
+      font-weight: 700;
+      border-radius: 60px;
+      cursor: pointer;
+      transition: 0.2s;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background: #eef3fa;
+      transform: scale(1.02);
+    }
+
+    .small-note {
+      font-size: 0.85rem;
+      opacity: 0.8;
+      margin-top: 1rem;
+    }
+
+    .img-grid {
+      display: flex;
+      gap: 1.5rem;
+      margin: 2rem 0;
+      flex-wrap: wrap;
+    }
+
+    .img-grid img {
+      flex: 1 1 200px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 20px;
+      min-width: 150px;
+      background: #d9e2ef;
+    }
+
+    hr {
+      border: none;
+      border-top: 2px solid #e2eaf2;
+      margin: 2rem 0;
+    }
+
+    /* Стили для формы контактов */
+    .contact-form {
+      background: #f0f5fb;
+      border-radius: 30px;
+      padding: 2rem;
+      margin: 2rem 0 1rem;
+      border: 1px solid #b3c9e0;
+      display: none;
+    }
+
+    .contact-form.show {
+      display: block;
+    }
+
+    .form-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group {
+      flex: 1 1 200px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: 500;
+      margin-bottom: 0.3rem;
+      color: #0b2545;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 0.8rem 1rem;
+      border: 1px solid #b3c9e0;
+      border-radius: 30px;
+      font-size: 1rem;
+      background: white;
+    }
+
+    .submit-btn {
+      background: #1e4f7a;
+      color: white;
+      border: none;
+      padding: 0.8rem 2rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+      border-radius: 40px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .submit-btn:hover {
+      background: #0b2f4a;
+    }
+
+    .close-form {
+      background: transparent;
+      border: 1px solid #1e4f7a;
+      color: #1e4f7a;
+      padding: 0.5rem 1.5rem;
+      border-radius: 40px;
+      cursor: pointer;
+      margin-left: 1rem;
+    }
+
+    .form-note {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #4a5a72;
+    }
+
+    @media (max-width: 700px) {
+      .container {
+        padding: 1.5rem;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .time {
+        width: 80px;
+      }
+
+      .session-desc {
+        padding-left: 80px;
+      }
+    }
+  </style>
+  <style data-id="immersive-translate-input-injected-css">
+    .immersive-translate-input {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      z-index: 2147483647;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .immersive-translate-attach-loading::after {
+      content: " ";
+
+      --loading-color: #f78fb6;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      display: block;
+      margin: 12px auto;
+      position: relative;
+      color: white;
+      left: -100px;
+      box-sizing: border-box;
+      animation: immersiveTranslateShadowRolling 1.5s linear infinite;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-2000%, -50%);
+      z-index: 100;
+    }
+
+    .immersive-translate-loading-spinner {
+      vertical-align: middle !important;
+      width: 10px !important;
+      height: 10px !important;
+      display: inline-block !important;
+      margin: 0 4px !important;
+      border: 2px rgba(221, 244, 255, 0.6) solid !important;
+      border-top: 2px rgba(0, 0, 0, 0.375) solid !important;
+      border-left: 2px rgba(0, 0, 0, 0.375) solid !important;
+      border-radius: 50% !important;
+      padding: 0 !important;
+      -webkit-animation: immersive-translate-loading-animation 0.6s infinite linear !important;
+      animation: immersive-translate-loading-animation 0.6s infinite linear !important;
+    }
+
+    @-webkit-keyframes immersive-translate-loading-animation {
+      from {
+        -webkit-transform: rotate(0deg);
+      }
+
+      to {
+        -webkit-transform: rotate(359deg);
+      }
+    }
+
+    @keyframes immersive-translate-loading-animation {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(359deg);
+      }
+    }
+
+    .immersive-translate-input-loading {
+      --loading-color: #f78fb6;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      display: block;
+      margin: 12px auto;
+      position: relative;
+      color: white;
+      left: -100px;
+      box-sizing: border-box;
+      animation: immersiveTranslateShadowRolling 1.5s linear infinite;
+    }
+
+    @keyframes immersiveTranslateShadowRolling {
+      0% {
+        box-shadow: 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0),
+          0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0);
+      }
+
+      12% {
+        box-shadow: 100px 0 var(--loading-color), 0px 0 rgba(255, 255, 255, 0),
+          0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0);
+      }
+
+      25% {
+        box-shadow: 110px 0 var(--loading-color), 100px 0 var(--loading-color),
+          0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0);
+      }
+
+      36% {
+        box-shadow: 120px 0 var(--loading-color), 110px 0 var(--loading-color),
+          100px 0 var(--loading-color), 0px 0 rgba(255, 255, 255, 0);
+      }
+
+      50% {
+        box-shadow: 130px 0 var(--loading-color), 120px 0 var(--loading-color),
+          110px 0 var(--loading-color), 100px 0 var(--loading-color);
+      }
+
+      62% {
+        box-shadow: 200px 0 rgba(255, 255, 255, 0), 130px 0 var(--loading-color),
+          120px 0 var(--loading-color), 110px 0 var(--loading-color);
+      }
+
+      75% {
+        box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0),
+          130px 0 var(--loading-color), 120px 0 var(--loading-color);
+      }
+
+      87% {
+        box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0),
+          200px 0 rgba(255, 255, 255, 0), 130px 0 var(--loading-color);
+      }
+
+      100% {
+        box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0),
+          200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0);
+      }
+    }
+
+    .immersive-translate-modal {
+      position: fixed;
+      z-index: 2147483647;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgb(0, 0, 0);
+      background-color: rgba(0, 0, 0, 0.4);
+      font-size: 15px;
+    }
+
+    .immersive-translate-modal-content {
+      background-color: #fefefe;
+      margin: 10% auto;
+      padding: 40px 24px 24px;
+      border-radius: 12px;
+      width: 350px;
+      font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu",
+        "Cantarell", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+        "Segoe UI Symbol", "Noto Color Emoji";
+      position: relative;
+    }
+
+    @media screen and (max-width: 768px) {
+      .immersive-translate-modal-content {
+        margin: 25% auto !important;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .immersive-translate-modal-content {
+        width: 80vw !important;
+        margin: 20vh auto !important;
+        padding: 20px 12px 12px !important;
+      }
+
+      .immersive-translate-modal-title {
+        font-size: 14px !important;
+      }
+
+      .immersive-translate-modal-body {
+        font-size: 13px !important;
+        max-height: 60vh !important;
+      }
+
+      .immersive-translate-btn {
+        font-size: 13px !important;
+        padding: 8px 16px !important;
+        margin: 0 4px !important;
+      }
+
+      .immersive-translate-modal-footer {
+        gap: 6px !important;
+        margin-top: 16px !important;
+      }
+    }
+
+    .immersive-translate-modal .immersive-translate-modal-content-in-input {
+      max-width: 500px;
+    }
+
+    .immersive-translate-modal-content-in-input .immersive-translate-modal-body {
+      text-align: left;
+      max-height: unset;
+    }
+
+    .immersive-translate-modal-title {
+      text-align: center;
+      font-size: 16px;
+      font-weight: 700;
+      color: #333333;
+    }
+
+    .immersive-translate-modal-body {
+      text-align: center;
+      font-size: 14px;
+      font-weight: 400;
+      color: #333333;
+      margin-top: 24px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .immersive-translate-modal-body {
+        max-height: 250px;
+        overflow-y: auto;
+      }
+    }
+
+    .immersive-translate-close {
+      color: #666666;
+      position: absolute;
+      right: 16px;
+      top: 16px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .immersive-translate-close:hover,
+    .immersive-translate-close:focus {
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .immersive-translate-modal-footer {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 24px;
+    }
+
+    .immersive-translate-btn {
+      width: fit-content;
+      color: #fff;
+      background-color: #ea4c89;
+      border: none;
+      font-size: 14px;
+      margin: 0 8px;
+      padding: 9px 30px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .immersive-translate-btn-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .immersive-translate-btn:hover {
+      background-color: #f082ac;
+    }
+
+    .immersive-translate-btn:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    .immersive-translate-btn:disabled:hover {
+      background-color: #ea4c89;
+    }
+
+    .immersive-translate-link-btn {
+      background-color: transparent;
+      color: #ea4c89;
+      border: none;
+      cursor: pointer;
+      height: 30px;
+      line-height: 30px;
+    }
+
+    .immersive-translate-cancel-btn {
+      /* gray color */
+      background-color: rgb(89, 107, 120);
+    }
+
+    .immersive-translate-cancel-btn:hover {
+      background-color: hsl(205, 20%, 32%);
+    }
+
+    .immersive-translate-action-btn {
+      background-color: transparent;
+      color: #ea4c89;
+      border: 1px solid #ea4c89;
+    }
+
+    .immersive-translate-btn svg {
+      margin-right: 5px;
+    }
+
+    .immersive-translate-link {
+      cursor: pointer;
+      user-select: none;
+      -webkit-user-drag: none;
+      text-decoration: none;
+      color: #ea4c89;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .immersive-translate-primary-link {
+      cursor: pointer;
+      user-select: none;
+      -webkit-user-drag: none;
+      text-decoration: none;
+      color: #ea4c89;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .immersive-translate-modal input[type="radio"] {
+      margin: 0 6px;
+      cursor: pointer;
+    }
+
+    .immersive-translate-modal label {
+      cursor: pointer;
+    }
+
+    .immersive-translate-close-action {
+      position: absolute;
+      top: 2px;
+      right: 0px;
+      cursor: pointer;
+    }
+
+    .imt-image-status {
+      background-color: rgba(0, 0, 0, 0.5) !important;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: center !important;
+      border-radius: 16px !important;
+    }
+
+    .imt-image-status img,
+    .imt-image-status svg,
+    .imt-img-loading {
+      width: 28px !important;
+      height: 28px !important;
+      margin: 0 0 8px 0 !important;
+      min-height: 28px !important;
+      min-width: 28px !important;
+      position: relative !important;
+    }
+
+    .imt-img-loading {
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAAtFBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////oK74hAAAAPHRSTlMABBMIDyQXHwyBfFdDMSw+OjXCb+5RG51IvV/k0rOqlGRM6KKMhdvNyZBz9MaupmxpWyj437iYd/yJVNZeuUC7AAACt0lEQVRIx53T2XKiUBCA4QYOiyCbiAsuuGBcYtxiYtT3f6/pbqoYHVFO5r+iivpo6DpAWYpqeoFfr9f90DsYAuRSWkFnPO50OgR9PwiCUFcl2GEcx+N/YBh6pvKaefHlUgZd1zVe0NbYcQjGBfzrPE8Xz8aF+71D8gG6DHFPpc4a7xFiCDuhaWgKgGIJQ3d5IMGDrpS4S5KgpIm+en9f6PlAhKby4JwEIxlYJV9h5k5nee9GoxHJ2IDSNB0dwdad1NAxDJ/uXDHYmebdk4PdbkS58CIVHdYSUHTYYRWOJblWSyu2lmy3KNFVJNBhxcuGW4YBVCbYGRZwIooipHsNqjM4FbgOQqQqSKQQU9V8xmi1QlgHqQQ6DDBvRUVCDirs+EzGDGOQTCATgtYTnbCVLgsVgRE0T1QE0qHCFAht2z6dLvJQs3Lo2FQoDxWNUiBhaP4eRgwNkI+dAjVOA/kUrIDwf3CG8NfNOE0eiFotSuo+rBiq8tD9oY4Qzc6YJw99hl1wzpQvD7ef2M8QgnOGJfJw+EltQc+oX2yn907QB22WZcvlUpd143dqQu+8pCJZuGE4xCuPXJqqcs5sNpsI93Rmzym1k4Npk+oD1SH3/a3LOK/JpUBpWfqNySxWzCfNCUITuDG5dtuphrUJ1myeIE9bIsPiKrfqTai5WZxbhtNphYx6GEIHihyGFTI69lje/rxajdh0s0msZ0zYxyPLhYCb1CyHm9Qsd2H37Y3lugVwL9kNh8Ot8cha6fUNQ8nuXi5z9/ExsAO4zQrb/ev1yrCB7lGyQzgYDGuxq1toDN/JGvN+HyWNHKB7zEoK+PX11e12G431erGYzwmytAWU56fkMHY5JJnDRR2eZji3AwtIcrEV8Cojat/BdQ7XOwGV1e1hDjGGjXbdArm8uJZtCH5MbcctVX8A1WpqumJHwckAAAAASUVORK5CYII=");
+      background-size: 28px 28px;
+      animation: image-loading-rotate 1s linear infinite !important;
+    }
+
+    .imt-image-status span {
+      color: var(--bg-2, #fff) !important;
+      font-size: 14px !important;
+      line-height: 14px !important;
+      font-weight: 500 !important;
+      font-family: "PingFang SC", Arial, sans-serif !important;
+    }
+
+    .imt-primary-button {
+      display: flex;
+      padding: 12px 80px;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      border-radius: 8px;
+      background: #ea4c89;
+      color: #fff;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .imt-retry-text {
+      color: #999;
+      text-align: center;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 21px;
+      cursor: pointer;
+    }
+
+    .imt-action-container {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .imt-modal-content-text {
+      text-align: left;
+      color: #333;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+
+    @keyframes image-loading-rotate {
+      from {
+        transform: rotate(360deg);
+      }
+
+      to {
+        transform: rotate(0deg);
+      }
+    }
+
+    .imt-linear-gradient-text {
+      background: linear-gradient(90deg, #00a6ff 0%, #c369ff 52.4%, #ff4590 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .imt-flex-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .imt-linear-black-btn {
+      border-radius: 50px;
+      background: linear-gradient(66deg, #222 19%, #696969 94.25%);
+      height: 48px;
+      width: 100%;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      justify-content: center;
+    }
+  </style>
+  <link type="text/css" rel="stylesheet" charset="UTF-8"
+    href="./Конференция_ Новые модели страхования в Китае_files/m=el_main_css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>
+      <font dir="auto" style="vertical-align: inherit;">
+        <font dir="auto" style="vertical-align: inherit;">国际在线会议</font>
+      </font><br>
+      <span>
+        <font dir="auto" style="vertical-align: inherit;">
+          <font dir="auto" style="vertical-align: inherit;">中国新型保险模式：人工智能、数字生态系统与金融市场转型</font>
+        </font>
+      </span>
+    </h1>
+
+    <!-- Основное изображение (图片1.jpg) -->
+    <img class="hero-img" src="./Конференция_ Новые модели страхования в Китае_files/pic1.jpg" alt="" loading="lazy"
+      onerror="this.onerror=null; this.src=&#39;&#39;; this.style.background=&#39;#d9e2ef&#39;;">
+
+    <!-- Информационная панель -->
+    <div class="info-bar">
+      <div class="info-item"><span class="icon">
+          <font dir="auto" style="vertical-align: inherit;">
+            <font dir="auto" style="vertical-align: inherit;">📅</font>
+          </font>
+        </span>
+        <font dir="auto" style="vertical-align: inherit;">
+          <font dir="auto" style="vertical-align: inherit;">2026年3月26日至28日</font>
+        </font>
+      </div>
+      <div class="info-item"><span class="icon">
+          <font dir="auto" style="vertical-align: inherit;">
+            <font dir="auto" style="vertical-align: inherit;">💻</font>
+          </font>
+        </span>
+        <font dir="auto" style="vertical-align: inherit;">
+          <font dir="auto" style="vertical-align: inherit;">在线的</font>
+        </font>
+      </div>
+      <div class="info-item"><span class="icon">
+          <font dir="auto" style="vertical-align: inherit;">
+            <font dir="auto" style="vertical-align: inherit;">🎫</font>
+          </font>
+        </span>
+        <font dir="auto" style="vertical-align: inherit;">
+          <font dir="auto" style="vertical-align: inherit;">150,000 卢布起（全天通行证）</font>
+        </font>
+      </div>
+      <div class="price-tag">
+        <font dir="auto" style="vertical-align: inherit;">
+          <font dir="auto" style="vertical-align: inherit;">3天</font>
+        </font>
+      </div>
+    </div>
+
+    <!-- О конференции -->
+    <h2>
+      <font dir="auto" style="vertical-align: inherit;">
+        <font dir="auto" style="vertical-align: inherit;">关于会议</font>
+      </font>
+    </h2>
+    <div class="desc">
+      <font dir="auto" style="vertical-align: inherit;">
+        <font dir="auto" style="vertical-align: inherit;">
+          中国目前在金融数字化和人工智能应用方面处于全球领先地位。在大数据、自动化、数字生态系统和新型风险管理模式的影响下，保险市场正在快速转型。本次会议将分析中国保险业的关键发展趋势以及人工智能在金融领域的实际应用。与会者将了解中国企业的前沿解决方案，探讨新的商业模式，并探索将这些创新成果应用于国际市场的机遇。
+        </font>
+      </font>
+    </div>
+
+    <!-- Ключевые темы + спикеры -->
+    <div class="grid-2" style="margin: 2rem 0;">
+      <div>
+        <h3>
+          <font dir="auto" style="vertical-align: inherit;">
+            <font dir="auto" style="vertical-align: inherit;">📌 关键主题</font>
+          </font>
+        </h3>
+        <ul class="topic-list">
+          <li>
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">数字化时代中国保险市场的转型</font>
+            </font>
+          </li>
+          <li>
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">人工智能在保险业的应用：实际案例</font>
+            </font>
+          </li>
+          <li>
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">利用大数据和行为分析</font>
+            </font>
+          </li>
+          <li>
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">客户服务和自动化的新模式</font>
+            </font>
+          </li>
+          <li>
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">社会评分和风险管理新方法</font>
+            </font>
+          </li>
+          <li>
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">数字生态系统与金融服务融合</font>
+            </font>
+          </li>
+          <li>
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">技术转型背景下保险业的未来</font>
+            </font>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3>
+          <font dir="auto" style="vertical-align: inherit;">
+            <font dir="auto" style="vertical-align: inherit;">🎤 扬声器</font>
+          </font>
+        </h3>
+        <ul class="speaker-list">
+          <li>
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">金融行业数字化转型专家</font>
+            </font>
+          </li>
+          <li>
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">人工智能和大数据专家</font>
+            </font>
+          </li>
+          <li>
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">保险技术解决方案开发商</font>
+            </font>
+          </li>
+          <li>
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">中国金融科技生态系统发展的领导者</font>
+            </font>
+          </li>
+        </ul>
+        <p style="margin-top: 1rem;">
+          <font dir="auto" style="vertical-align: inherit;">
+            <font dir="auto" style="vertical-align: inherit;">中国领先企业的代表将分享创新实施的实际案例。</font>
+          </font>
+        </p>
+      </div>
+    </div>
+
+    <!-- Формат конференции -->
+    <h2>
+      <font dir="auto" style="vertical-align: inherit;">
+        <font dir="auto" style="vertical-align: inherit;">会议形式</font>
+      </font>
+    </h2>
+    <div class="grid-3" style="margin: 1.5rem 0;">
+      <div style="background: #f0f5fb; padding: 1.2rem; border-radius: 24px;">
+        <font dir="auto" style="vertical-align: inherit;">
+          <font dir="auto" style="vertical-align: inherit;">🎙️专家演讲</font>
+        </font>
+      </div>
+      <div style="background: #f0f5fb; padding: 1.2rem; border-radius: 24px;">
+        <font dir="auto" style="vertical-align: inherit;">
+          <font dir="auto" style="vertical-align: inherit;">📊 分析报告</font>
+        </font>
+      </div>
+      <div style="background: #f0f5fb; padding: 1.2rem; border-radius: 24px;">
+        <font dir="auto" style="vertical-align: inherit;">
+          <font dir="auto" style="vertical-align: inherit;">💬 主题会议</font>
+        </font>
+      </div>
+      <div style="background: #f0f5fb; padding: 1.2rem; border-radius: 24px;">
+        <font dir="auto" style="vertical-align: inherit;">
+          <font dir="auto" style="vertical-align: inherit;">⚙️ 讨论实际案例
+          </font>
+        </font>
+      </div>
+      <div style="background: #f0f5fb; padding: 1.2rem; border-radius: 24px;">
+        <font dir="auto" style="vertical-align: inherit;">
+          <font dir="auto" style="vertical-align: inherit;">🌐 为俄语使用者提供同声传译</font>
+        </font>
+      </div>
+      <div style="background: #f0f5fb; padding: 1.2rem; border-radius: 24px;">
+        <font dir="auto" style="vertical-align: inherit;">
+          <font dir="auto" style="vertical-align: inherit;">📁 获取材料</font>
+        </font>
+      </div>
+    </div>
+
+    <!-- Галерея изображений (图片2.jpg, 图片3.jpg, 并用图片1.jpg重复一张？用户只给了三张，这里需要三张小图，因此使用图片2、图片3，第三张小图暂时重复图片2或使用图片1？但用户只给了三张，主图用掉一张，剩下两张不够三张小图。我们可以将图片1同时用于小图？或者合理分配：主图用图片1，小图用图片2、图片3，第三张小图可重复使用图片2或图片3。为简单起见，我们让三张小图依次为图片2、图片3、图片2。用户如果有更多图片可以自行替换。-->
+    <div class="img-grid">
+      <img src="./Конференция_ Новые модели страхования в Китае_files/pic2.jpg" alt="" loading="lazy"
+        onerror="this.onerror=null; this.src=&#39;&#39;; this.style.background=&#39;#d9e2ef&#39;;">
+      <img src="./Конференция_ Новые модели страхования в Китае_files/pic3.jpg" alt="" loading="lazy"
+        onerror="this.onerror=null; this.src=&#39;&#39;; this.style.background=&#39;#d9e2ef&#39;;">
+      <img src="./Конференция_ Новые модели страхования в Китае_files/pic4.jpg" alt="" loading="lazy"
+        onerror="this.onerror=null; this.src=&#39;&#39;; this.style.background=&#39;#d9e2ef&#39;;">
+    </div>
+
+    <hr>
+
+    <!-- Программа конференции -->
+    <h2>
+      <font dir="auto" style="vertical-align: inherit;">
+        <font dir="auto" style="vertical-align: inherit;">📅 会议日程</font>
+      </font>
+    </h2>
+    <div class="grid-3" style="gap: 1.5rem;">
+      <!-- День 1 -->
+      <div class="schedule-day">
+        <div class="day-title">
+          <font dir="auto" style="vertical-align: inherit;">
+            <font dir="auto" style="vertical-align: inherit;">第一天</font>
+          </font><span class="date">
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">3月26日</font>
+            </font>
+          </span>
+        </div>
+        <div class="session"><span class="time">
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">10:00–10:20</font>
+            </font>
+          </span><span class="session-title">
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">会议开幕</font>
+            </font>
+          </span></div>
+        <div class="session"><span class="time">
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">10:20–11:10</font>
+            </font>
+          </span><span class="session-title">
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">中国保险市场：结构、规模和驱动因素</font>
+            </font>
+          </span></div>
+        <div class="session"><span class="time">
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">11:10–11:30</font>
+            </font>
+          </span><span class="session-title">
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">休息</font>
+            </font>
+          </span>
+        </div>
+        <div class="session"><span class="time">
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">11:30–12:30</font>
+            </font>
+          </span><span class="session-title">
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">保险业的数字化转型</font>
+            </font>
+          </span></div>
+        <div class="session"><span class="time">
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">12:30–13:30</font>
+            </font>
+          </span><span class="session-title">
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">人工智能在保险业的应用：真实案例研究</font>
+            </font>
+          </span></div>
+        <div class="session"><span class="time">
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">下午1:30-2:00</font>
+            </font>
+          </span><span class="session-title">
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">讨论、提问</font>
+            </font>
+          </span></div>
+      </div>
+      <!-- День 2 -->
+      <div class="schedule-day">
+        <div class="day-title">
+          <font dir="auto" style="vertical-align: inherit;">
+            <font dir="auto" style="vertical-align: inherit;">第二天</font>
+          </font><span class="date">
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">3月27日</font>
+            </font>
+          </span>
+        </div>
+        <div class="session"><span class="time">
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">10:00–10:15</font>
+            </font>
+          </span><span class="session-title">
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">当日开幕</font>
+            </font>
+          </span></div>
+        <div class="session"><span class="time">
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">10:15–11:15</font>
+            </font>
+          </span><span class="session-title">
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">金融服务领域的人工智能</font>
+            </font>
+          </span></div>
+        <div class="session"><span class="time">
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">11:15–11:30</font>
+            </font>
+          </span><span class="session-title">
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">休息</font>
+            </font>
+          </span>
+        </div>
+        <div class="session"><span class="time">
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">11:30–12:30</font>
+            </font>
+          </span><span class="session-title">
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">大数据和行为分析</font>
+            </font>
+          </span></div>
+        <div class="session"><span class="time">
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">12:30–13:30</font>
+            </font>
+          </span><span class="session-title">
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">数字生态系统与融合</font>
+            </font>
+          </span></div>
+        <div class="session"><span class="time">
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">下午1:30-2:00</font>
+            </font>
+          </span><span class="session-title">
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">讨论：人工智能在保险业的未来</font>
+            </font>
+          </span></div>
+      </div>
+      <!-- День 3 -->
+      <div class="schedule-day">
+        <div class="day-title">
+          <font dir="auto" style="vertical-align: inherit;">
+            <font dir="auto" style="vertical-align: inherit;">第3天</font>
+          </font><span class="date">
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">3月28日</font>
+            </font>
+          </span>
+        </div>
+        <div class="session"><span class="time">
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">10:00–10:15</font>
+            </font>
+          </span><span class="session-title">
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">当日开幕</font>
+            </font>
+          </span></div>
+        <div class="session"><span class="time">
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">10:15–11:15</font>
+            </font>
+          </span><span class="session-title">
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">保险业的未来：趋势</font>
+            </font>
+          </span></div>
+        <div class="session"><span class="time">
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">11:15–11:30</font>
+            </font>
+          </span><span class="session-title">
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">休息</font>
+            </font>
+          </span>
+        </div>
+        <div class="session"><span class="time">
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">11:30–12:30</font>
+            </font>
+          </span><span class="session-title">
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">新的风险和评分模型</font>
+            </font>
+          </span></div>
+        <div class="session"><span class="time">
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">12:30–13:15</font>
+            </font>
+          </span><span class="session-title">
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">中国做法的国际应用</font>
+            </font>
+          </span></div>
+        <div class="session"><span class="time">
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">13:15–13:45</font>
+            </font>
+          </span><span class="session-title">
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">专家讨论</font>
+            </font>
+          </span></div>
+        <div class="session"><span class="time">
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">下午1:45至2:00</font>
+            </font>
+          </span><span class="session-title">
+            <font dir="auto" style="vertical-align: inherit;">
+              <font dir="auto" style="vertical-align: inherit;">会议闭幕</font>
+            </font>
+          </span></div>
+      </div>
+    </div>
+
+    <!-- Блок цены и кнопка -->
+    <div class="footer-block">
+      <div>
+        <div style="font-size: 1.3rem; opacity: 0.9;">
+          <font dir="auto" style="vertical-align: inherit;">
+            <font dir="auto" style="vertical-align: inherit;">参与费用</font>
+          </font>
+        </div>
+        <div class="price-large">
+          <font dir="auto" style="vertical-align: inherit;">
+            <font dir="auto" style="vertical-align: inherit;">150,000 卢布起</font>
+          </font>
+        </div>
+        <div style="margin-top: 0.5rem;">
+          <font dir="auto" style="vertical-align: inherit;">
+            <font dir="auto" style="vertical-align: inherit;">三天内均可访问</font>
+          </font>
+        </div>
+      </div>
+      <div style="text-align: center;">
+        <button class="btn" id="showContactBtn">
+          <font dir="auto" style="vertical-align: inherit;">
+            <font dir="auto" style="vertical-align: inherit;">请留下您的联系方式</font>
+          </font>
+        </button>
+        <div class="small-note">
+          <font dir="auto" style="vertical-align: inherit;">
+            <font dir="auto" style="vertical-align: inherit;">我们会联系您进行预订。</font>
+          </font>
+        </div>
+      </div>
+    </div>
+
+    <!-- Форма контактов -->
+    <div id="contactForm" class="contact-form">
+      <h3 style="margin-top: 0; color: #0b2545;">📋 Оставьте ваши контактные данные</h3>
+      <p style="margin-bottom: 1.5rem;">Наш менеджер свяжется с вами в ближайшее время</p>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Имя *</label>
+          <input type="text" id="name" placeholder="Алексей">
+        </div>
+        <div class="form-group">
+          <label for="phone">Телефон *</label>
+          <input type="tel" id="phone" placeholder="+7 999 123-45-67">
+        </div>
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" placeholder="example@mail.ru">
+        </div>
+      </div>
+      <div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+        <button class="submit-btn"
+          onclick="alert(&#39;Спасибо! Мы свяжемся с вами в ближайшее время (демонстрация).&#39;); document.getElementById(&#39;contactForm&#39;).classList.remove(&#39;show&#39;);">Отправить</button>
+        <button class="close-form"
+          onclick="document.getElementById(&#39;contactForm&#39;).classList.remove(&#39;show&#39;);">Закрыть</button>
+      </div>
+      <p class="form-note">* — обязательные поля. Данные не передаются третьим лицам.</p>
+    </div>
+
+    <p style="text-align: center; color: #7f8fa6; margin-top: 2rem; font-size: 0.9rem;">
+      <font dir="auto" style="vertical-align: inherit;">
+        <font dir="auto" style="vertical-align: inherit;">主办方：国际保险研究中心 · 2026年</font>
+      </font>
+    </p>
+  </div>
+
+  <script>
+    document.getElementById('showContactBtn').addEventListener('click', function () {
+      var form = document.getElementById('contactForm');
+      form.classList.toggle('show');
+      if (form.classList.contains('show')) {
+        form.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  </script>
+
+</body>
+<div id="resumeautofill-root"
+  style="color-scheme: initial; forced-color-adjust: initial; mask: initial; math-depth: initial; position: fixed; position-anchor: initial; text-size-adjust: initial; appearance: initial; color: initial; font: initial; font-palette: initial; font-synthesis: initial; position-area: initial; text-orientation: initial; text-rendering: initial; text-spacing-trim: initial; -webkit-font-smoothing: initial; -webkit-locale: initial; -webkit-text-orientation: initial; -webkit-writing-mode: initial; writing-mode: initial; zoom: initial; accent-color: initial; place-content: initial; place-items: initial; place-self: initial; alignment-baseline: initial; anchor-name: initial; anchor-scope: initial; animation-composition: initial; animation: initial; app-region: initial; aspect-ratio: initial; backdrop-filter: initial; backface-visibility: initial; background: initial; background-blend-mode: initial; baseline-shift: initial; baseline-source: initial; block-size: initial; border-block: initial; border: initial; border-radius: initial; border-collapse: initial; border-end-end-radius: initial; border-end-start-radius: initial; border-inline: initial; border-start-end-radius: initial; border-start-start-radius: initial; bottom: initial; box-decoration-break: initial; box-shadow: initial; box-sizing: initial; break-after: initial; break-before: initial; break-inside: initial; buffered-rendering: initial; caption-side: initial; caret-animation: initial; caret-color: initial; caret-shape: initial; clear: initial; clip: initial; clip-path: initial; clip-rule: initial; color-interpolation: initial; color-interpolation-filters: initial; color-rendering: initial; columns: initial; column-fill: initial; gap: initial; column-rule: initial; column-span: initial; contain: initial; contain-intrinsic-block-size: initial; contain-intrinsic-size: initial; contain-intrinsic-inline-size: initial; container: initial; content: initial; content-visibility: initial; corner-shape: initial; corner-block-end-shape: initial; corner-block-start-shape: initial; counter-increment: initial; counter-reset: initial; counter-set: initial; cursor: initial; cx: initial; cy: initial; d: initial; display: initial; dominant-baseline: initial; dynamic-range-limit: initial; empty-cells: initial; field-sizing: initial; fill: initial; fill-opacity: initial; fill-rule: initial; filter: initial; flex: initial; flex-flow: initial; float: initial; flood-color: initial; flood-opacity: initial; grid: initial; grid-area: initial; height: 0px; hyphenate-character: initial; hyphenate-limit-chars: initial; hyphens: initial; image-orientation: initial; image-rendering: initial; initial-letter: initial; inline-size: initial; inset-block: initial; inset-inline: initial; interactivity: initial; interest-delay: initial; interpolate-size: initial; isolation: initial; left: initial; letter-spacing: initial; lighting-color: initial; line-break: initial; list-style: initial; margin-block: initial; margin: initial; margin-inline: initial; marker: initial; mask-type: initial; math-shift: initial; math-style: initial; max-block-size: initial; max-height: initial; max-inline-size: initial; max-width: initial; min-block-size: initial; min-height: initial; min-inline-size: initial; min-width: initial; mix-blend-mode: initial; object-fit: initial; object-position: initial; object-view-box: initial; offset: initial; opacity: initial; order: initial; orphans: initial; outline: initial; outline-offset: initial; overflow-anchor: initial; overflow-block: initial; overflow-clip-margin: initial; overflow-inline: initial; overflow-wrap: initial; overflow: initial; overlay: initial; overscroll-behavior-block: initial; overscroll-behavior-inline: initial; overscroll-behavior: initial; padding-block: initial; padding: initial; padding-inline: initial; page: initial; page-orientation: initial; paint-order: initial; perspective: initial; perspective-origin: initial; pointer-events: none; position-try: initial; position-visibility: initial; print-color-adjust: initial; quotes: initial; r: initial; reading-flow: initial; reading-order: initial; resize: initial; right: 0px; rotate: initial; ruby-align: initial; ruby-position: initial; rx: initial; ry: initial; scale: initial; scroll-behavior: initial; scroll-initial-target: initial; scroll-margin-block: initial; scroll-margin: initial; scroll-margin-inline: initial; scroll-marker-group: initial; scroll-padding-block: initial; scroll-padding: initial; scroll-padding-inline: initial; scroll-snap-align: initial; scroll-snap-stop: initial; scroll-snap-type: initial; scroll-target-group: initial; scroll-timeline: initial; scrollbar-color: initial; scrollbar-gutter: initial; scrollbar-width: initial; shape-image-threshold: initial; shape-margin: initial; shape-outside: initial; shape-rendering: initial; size: initial; speak: initial; stop-color: initial; stop-opacity: initial; stroke: initial; stroke-dasharray: initial; stroke-dashoffset: initial; stroke-linecap: initial; stroke-linejoin: initial; stroke-miterlimit: initial; stroke-opacity: initial; stroke-width: initial; tab-size: initial; table-layout: initial; text-align: initial; text-align-last: initial; text-anchor: initial; text-autospace: initial; text-box: initial; text-combine-upright: initial; text-decoration: initial; text-decoration-skip-ink: initial; text-emphasis: initial; text-emphasis-position: initial; text-indent: initial; text-justify: initial; text-overflow: initial; text-shadow: initial; text-transform: initial; text-underline-offset: initial; text-underline-position: initial; text-wrap: initial; timeline-scope: initial; top: 0px; touch-action: initial; transform: initial; transform-box: initial; transform-origin: initial; transform-style: initial; transition: initial; translate: initial; user-select: initial; vector-effect: initial; vertical-align: initial; view-timeline: initial; view-transition-class: initial; view-transition-group: initial; view-transition-name: initial; visibility: initial; border-spacing: initial; -webkit-box-align: initial; -webkit-box-decoration-break: initial; -webkit-box-direction: initial; -webkit-box-flex: initial; -webkit-box-ordinal-group: initial; -webkit-box-orient: initial; -webkit-box-pack: initial; -webkit-box-reflect: initial; -webkit-line-break: initial; -webkit-line-clamp: initial; -webkit-mask-box-image: initial; -webkit-rtl-ordering: initial; -webkit-ruby-position: initial; -webkit-tap-highlight-color: initial; -webkit-text-combine: initial; -webkit-text-decorations-in-effect: initial; -webkit-text-fill-color: initial; -webkit-text-security: initial; -webkit-text-stroke: initial; -webkit-user-drag: initial; white-space-collapse: initial; widows: initial; width: 0px; will-change: initial; word-break: initial; word-spacing: initial; x: initial; y: initial; z-index: 2147483647;">
+  <template shadowrootmode="open">
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .panel {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 320px;
+        background: #fff;
+        color: #222;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Noto Sans SC', 'Microsoft YaHei', Arial, sans-serif;
+        border-left: 1px solid rgba(0, 0, 0, .08);
+        box-shadow: -2px 0 12px rgba(0, 0, 0, .12);
+        transform: translateX(100%);
+        transition: transform .22s ease;
+        pointer-events: auto;
+      }
+
+      .panel.open {
+        transform: translateX(0);
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 12px;
+        background: #f7f7f8;
+        border-bottom: 1px solid #eee;
+        position: sticky;
+        top: 0;
+        z-index: 2;
+      }
+
+      header .title {
+        font-weight: 700;
+        font-size: 14px;
+      }
+
+      header input[type=search] {
+        flex: 1;
+        padding: 6px 10px;
+        font-size: 12px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        outline: none;
+        background: #fff;
+      }
+
+      header .close {
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        font-size: 18px;
+        padding: 4px 6px;
+        line-height: 1;
+      }
+
+      .scroll {
+        height: calc(100vh - 44px);
+        overflow: auto;
+        padding: 10px 12px;
+      }
+
+      .cat {
+        margin-bottom: 10px;
+      }
+
+      .cat h4 {
+        margin: 10px 0 6px;
+        font-size: 12px;
+        color: #666;
+        font-weight: 700;
+      }
+
+      .items {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        gap: 6px;
+      }
+
+      .chip {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        gap: 6px;
+        background: #f0f2f5;
+        border: 1px solid #e3e5e8;
+        color: #333;
+        padding: 6px 8px;
+        border-radius: 10px;
+        font-size: 12px;
+        cursor: pointer;
+        user-select: none;
+        transition: background .15s, border-color .15s, transform .05s;
+      }
+
+      .chip:hover {
+        background: #e7f1ff;
+        border-color: #b8d4ff;
+      }
+
+      .chip:active {
+        transform: translateY(1px);
+      }
+
+      .chip .label {
+        font-weight: 600;
+      }
+
+      .muted {
+        color: #999;
+      }
+
+      .toast {
+        position: fixed;
+        right: 340px;
+        top: 14px;
+        background: rgba(0, 0, 0, .82);
+        color: #fff;
+        padding: 8px 12px;
+        border-radius: 8px;
+        font-size: 12px;
+        opacity: 0;
+        transform: translateY(-8px);
+        transition: opacity .2s, transform .2s;
+        pointer-events: none;
+      }
+
+      header .iconbtn {
+        border: none;
+        background: #1677ff;
+        color: #fff;
+        cursor: pointer;
+        padding: 6px 8px;
+        border-radius: 6px;
+        font-size: 12px;
+      }
+
+      header .iconbtn:hover {
+        filter: brightness(0.95);
+      }
+
+      .resizer {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 6px;
+        height: 100%;
+        cursor: ew-resize;
+        background: transparent;
+      }
+
+      .resizer:hover {
+        background: rgba(22, 119, 255, .1);
+      }
+
+      .toast.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+    <div class="panel" style="width: 360px;">
+      <div class="resizer"></div>
+      <header>
+        <div class="title">
+          <font dir="auto" style="vertical-align: inherit;">
+            <font dir="auto" style="vertical-align: inherit;">简历助理</font>
+          </font>
+        </div><button class="iconbtn" title="使用模型智能识别并填入">
+          <font dir="auto" style="vertical-align: inherit;">
+            <font dir="auto" style="vertical-align: inherit;">模型填入</font>
+          </font>
+        </button><button class="iconbtn" title="使用规则引擎填入匹配字段">
+          <font dir="auto" style="vertical-align: inherit;">
+            <font dir="auto" style="vertical-align: inherit;">规则填入</font>
+          </font>
+        </button><button class="iconbtn" title="配置LLM模型与API">
+          <font dir="auto" style="vertical-align: inherit;">
+            <font dir="auto" style="vertical-align: inherit;">建立模型</font>
+          </font>
+        </button><button class="iconbtn" title="新增信息并在新页面编辑">
+          <font dir="auto" style="vertical-align: inherit;">
+            <font dir="auto" style="vertical-align: inherit;">新增</font>
+          </font>
+        </button><button class="close" title="关闭面板">
+          <font dir="auto" style="vertical-align: inherit;">
+            <font dir="auto" style="vertical-align: inherit;">×</font>
+          </font>
+        </button>
+      </header>
+      <div class="scroll"></div>
+    </div>
+    <div class="toast" style="right: 380px;"></div>
+  </template></div>
+<div id="immersive-translate-browser-popup" style="all: initial"><template shadowrootmode="open">
+    <style>
+      /** 基础色阶定义 **/
+      :root,
+      #mount[data-theme="light"],
+      #mount:not([data-theme="dark"]) {
+        /* 中性灰阶（light） */
+        --c-00: #000000;
+        --c-22: #222222;
+        --c-33: #333333;
+        --c-66: #666666;
+        --c-83: #838383;
+        --c-99: #999999;
+        --c-c7: #c7c7c7;
+        --c-cc: #cccccc;
+        --c-e6: #e6e6e6;
+        --c-f5: #f5f5f5;
+        --c-ff: #ffffff;
+        /* 品牌主色阶（light） */
+        --p-main: #ea4c89;
+        --p-hover: #ec5e95;
+        --p-active: #e34a85;
+        --p-special: #ee71a2;
+        --p-disabled: #f4a5c4;
+        --p-text-disabled: #f9c9dc;
+        --p-weak: #fdedf3;
+        /* Surface 层级（light，TC 填充-1） */
+        --s-1: #f3f5f6;
+        --s-1-hover: #f6f8f9;
+        --s-1-active: #edf1f2;
+        --s-1-weak: #fafbfb;
+        /* 输入/边框（light，TC 填充-2） */
+        --input-bg-base: #fafbfc;
+        --input-border: #ecf0f7;
+        --input-border-strong: #e0e0e6;
+        --input-bg-strong: #fafdff;
+      }
+
+      :root[data-theme="dark"],
+      [data-theme="dark"] {
+        /* 中性灰阶（dark） */
+        --c-00: #ffffff;
+        --c-22: #dbdbdb;
+        --c-33: #dbdbdb;
+        --c-66: #b3b3b3;
+        --c-83: #838383;
+        --c-99: #707070;
+        --c-c7: #666666;
+        --c-cc: #5c5c5c;
+        --c-e6: #3b3b3b;
+        --c-f5: #262626;
+        --c-ff: #222222;
+        /* 品牌主色阶（dark） */
+        --p-main: #e23c7c;
+        --p-hover: #ea4c89;
+        --p-active: #d5467d;
+        --p-special: #a93a65;
+        --p-disabled: #7e2f4d;
+        --p-text-disabled: #522335;
+        --p-weak: #26171d;
+        /* Surface 层级（dark，TC 填充-1） */
+        --s-1: #2d2e2f;
+        --s-1-hover: #323434;
+        --s-1-active: #202121;
+        --s-1-weak: #262627;
+        /* 输入/边框（dark，TC 填充-2） */
+        --input-bg-base: #2b2d30;
+        --input-border: #3e434b;
+        --input-border-strong: #43474b;
+        --input-bg-strong: #1f2123;
+      }
+
+      :root,
+      #mount [data-theme] {
+        /* 业务/通用变量引用色阶（全局可见，含 Shadow DOM） */
+        --primary: var(--p-main);
+        --primary-hover: var(--p-hover);
+        --primary-inverse: #fff;
+        --modal-background: var(--s-1);
+        --modal-border: var(--input-border);
+        --modal-text: var(--c-22);
+        --modal-text-secondary: var(--c-66);
+        --modal-error: var(--p-main);
+        --modal-required: #f53f3f;
+        --modal-success: #68cd52;
+        --modal-button-background: var(--p-main);
+        --modal-button-text: var(--c-ff);
+        --modal-input-background: var(--input-bg-base);
+        --modal-check-color: var(--p-main);
+        --background-color: var(--c-ff);
+        --background-light-green: var(--s-1-weak, #f5f7f9);
+        --text-black-2: var(--c-22);
+        --text-gray-2: var(--c-22);
+        --text-gray-6: var(--c-66);
+        --text-gray-9: var(--c-99);
+        --text-gray-c2: var(--c-c7);
+        --switch-background-color: var(--c-c7, hsl(205deg, 16%, 77%));
+        --float-ball-more-button-border-color: var(--c-f5, #f6f6f6);
+        --float-ball-more-button-background-color: var(--c-ff);
+        --float-ball-more-button-hover-color: var(--p-weak);
+        --float-ball-more-button-svg-color: #6c6f73;
+        --service-bg-hover: var(--s-1-hover, #f7faff);
+        --service-bg: var(--s-1-weak, #fafbfb);
+      }
+
+      #mount {
+        --font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu",
+          "Cantarell", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+          "Segoe UI Symbol", "Noto Color Emoji";
+        /* PC/H5 兼容的字号、间距、圆角、阴影变量 */
+        --f-12: 12px;
+        --f-14: 14px;
+        --f-15: 15px;
+        --f-16: 16px;
+        --f-18: 18px;
+        --f-20: 20px;
+        --space-4: 4px;
+        --space-6: 6px;
+        --space-8: 8px;
+        --space-12: 12px;
+        --space-16: 16px;
+        --space-18: 18px;
+        --space-24: 24px;
+        --radius-8: 8px;
+        --radius-12: 12px;
+        --radius-16: 16px;
+        --control-height-lg: 44px;
+        --width-28: 28px;
+        --width-24: 24px;
+        --width-20: 20px;
+        --width-18: 18px;
+        --width-16: 16px;
+        --width-label-md: 56px;
+        --shadow-lg: 0 18px 48px rgba(0, 0, 0, 0.12);
+
+        /* 常规变量 */
+        --line-height: 1.5;
+        --font-weight: 400;
+        --font-size: 16px;
+        --border-radius: 4px;
+        --border-width: 2px;
+        --outline-width: 3px;
+        --spacing: 16px;
+        --typography-spacing-vertical: 24px;
+        --block-spacing-vertical: calc(var(--spacing) * 2);
+        --block-spacing-horizontal: var(--spacing);
+        --grid-spacing-vertical: 0;
+        --grid-spacing-horizontal: var(--spacing);
+        --form-element-spacing-vertical: 12px;
+        --form-element-spacing-horizontal: 16px;
+        --nav-element-spacing-vertical: 16px;
+        --nav-element-spacing-horizontal: 8px;
+        --nav-link-spacing-vertical: 8px;
+        --nav-link-spacing-horizontal: 8px;
+        --form-label-font-weight: var(--font-weight);
+        --transition: 0.2s ease-in-out;
+        --modal-overlay-backdrop-filter: blur(4px);
+        --switch-color: var(--primary-inverse);
+        --switch-checked-background-color: var(--primary);
+        --icon-xia: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgaWQ9IkZyYW1lIj4KPHBhdGggaWQ9IlZlY3RvciIgZD0iTTguMDAyOTEgOS42Nzk4M0wzLjgzMzM5IDUuNTEyMjFMMy4wMjUzOSA2LjMxOTgzTDguMDAzMjkgMTEuMjk1MUwxMi45NzYyIDYuMzE5ODNMMTIuMTY3OSA1LjUxMjIxTDguMDAyOTEgOS42Nzk4M1oiIGZpbGw9IiM4MzgzODMiLz4KPC9nPgo8L3N2Zz4K");
+        /* 兼容旧变量：主色直接引用品牌主色阶 */
+        --primary: var(--p-main);
+        --primary-hover: var(--p-hover);
+        --primary-inverse: #fff;
+        /* Modal 业务变量引用色阶 */
+        --modal-background: var(--s-1);
+        --modal-border: var(--input-border);
+        --modal-text: var(--c-22);
+        --modal-text-secondary: var(--c-66);
+        --modal-error: var(--p-main);
+        --modal-required: #f53f3f;
+        --modal-success: #68cd52;
+        --modal-button-background: var(--p-main);
+        --modal-button-text: var(--c-ff);
+        --modal-input-background: var(--input-bg-base);
+        --modal-check-color: var(--p-main);
+        --background-color: var(--c-ff);
+        --background-light-green: var(--s-1-weak, #f5f7f9);
+        --text-black-2: var(--c-22);
+        --text-gray-2: var(--c-22);
+        --text-gray-6: var(--c-66);
+        --text-gray-9: var(--c-99);
+        --text-gray-c2: var(--c-c7);
+        --switch-background-color: var(--c-c7, hsl(205deg, 16%, 77%));
+        --float-ball-more-button-border-color: var(--c-f5, #f6f6f6);
+        --float-ball-more-button-background-color: var(--c-ff);
+        --float-ball-more-button-hover-color: var(--p-weak);
+        --float-ball-more-button-svg-color: #6c6f73;
+        --service-bg-hover: var(--s-1-hover, #f7faff);
+        --service-bg: var(--s-1-weak, #fafbfb);
+        line-height: var(--line-height);
+        font-family: var(--font-family);
+        font-size: var(--font-size);
+      }
+
+      @media (max-width: 480px) {
+
+        :root,
+        #mount {
+          --f-12: 10px;
+          --f-14: 12px;
+          --f-15: 13px;
+          --f-16: 14px;
+          --f-18: 16px;
+          --f-20: 18px;
+          --space-4: 4px;
+          --space-6: 4px;
+          --space-8: 6px;
+          --space-12: 8px;
+          --space-16: 12px;
+          --space-18: 14px;
+          --space-24: 18px;
+          --radius-8: 6px;
+          --radius-12: 10px;
+          --radius-16: 12px;
+          --control-height-lg: 38px;
+          --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.1);
+          --width-28: 24px;
+          --width-24: 20px;
+          --width-20: 16px;
+          --width-18: 14px;
+          --width-16: 12px;
+          --width-label-md: 52px;
+        }
+      }
+
+      #mount * {
+        box-sizing: border-box;
+      }
+
+      [hidden] {
+        display: none !important;
+      }
+
+      :where(#mount) a,
+      :where(#mount) [role="link"] {
+        --color: var(--primary);
+        --background-color: transparent;
+        outline: none;
+        background-color: var(--background-color);
+        color: var(--color);
+        -webkit-text-decoration: var(--text-decoration);
+        text-decoration: var(--text-decoration);
+        transition: background-color var(--transition), color var(--transition),
+          box-shadow var(--transition), -webkit-text-decoration var(--transition);
+        transition: background-color var(--transition), color var(--transition),
+          text-decoration var(--transition), box-shadow var(--transition);
+        transition: background-color var(--transition), color var(--transition),
+          text-decoration var(--transition), box-shadow var(--transition),
+          -webkit-text-decoration var(--transition);
+      }
+
+      :where(#mount) a:is([aria-current], :hover, :active, :focus),
+      :where(#mount) [role="link"]:is([aria-current], :hover, :active, :focus) {
+        --color: var(--primary-hover);
+        --text-decoration: underline;
+      }
+
+      :where(#mount) label {
+        font-size: 13px;
+        line-height: 1.3;
+        color: var(--text-gray-2, #222222);
+      }
+
+      :where(#mount) button {
+        width: 100%;
+        font-family: inherit;
+        font-size: 15px;
+        line-height: 1.3;
+        min-height: 44px;
+        border-radius: 12px;
+        padding: 0 14px;
+        border: none;
+        background-color: var(--primary, #ea4c89);
+        color: #ffffff;
+        cursor: pointer;
+        transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+      }
+
+      :where(#mount) button:hover {
+        background-color: var(--primary-hover, #f082ac);
+      }
+
+      :where(#mount) button:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+      }
+
+      :where(#mount) select,
+      :where(#mount) input,
+      :where(#mount) textarea {
+        font-family: inherit;
+        color: var(--text-gray-2, #222222);
+      }
+
+      :where(#mount) select {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        font-family: inherit;
+        color: var(--text-gray-2, inherit);
+        font-size: 13px;
+        line-height: 1.3;
+        outline: none;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 12px;
+        background-color: var(--popup-item-background-color, transparent);
+        background-image: var(--icon-xia, none);
+        background-repeat: no-repeat;
+        background-position: center right 12px;
+        background-size: 16px auto;
+        cursor: pointer;
+      }
+
+      :where(#mount) input[type="checkbox"] {
+        accent-color: var(--primary, #ea4c89);
+      }
+
+      [type="checkbox"],
+      [type="radio"] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 1.25em;
+        height: 1.25em;
+        margin-top: -0.125em;
+        margin-right: 0.375em;
+        margin-left: 0;
+        -webkit-margin-start: 0;
+        margin-inline-start: 0;
+        -webkit-margin-end: 0.375em;
+        margin-inline-end: 0.375em;
+        border-width: var(--border-width);
+        font-size: inherit;
+        vertical-align: middle;
+        cursor: pointer;
+      }
+
+      [type="checkbox"]::-ms-check,
+      [type="radio"]::-ms-check {
+        display: none;
+      }
+
+      [type="checkbox"]:checked,
+      [type="checkbox"]:checked:active,
+      [type="checkbox"]:checked:focus,
+      [type="radio"]:checked,
+      [type="radio"]:checked:active,
+      [type="radio"]:checked:focus {
+        --background-color: var(--primary);
+        --border-color: var(--primary);
+        background-image: var(--icon-checkbox);
+        background-position: center;
+        background-size: 0.75em auto;
+        background-repeat: no-repeat;
+      }
+
+      [type="checkbox"]~label,
+      [type="radio"]~label {
+        display: inline-block;
+        margin-right: 0.375em;
+        margin-bottom: 0;
+        cursor: pointer;
+      }
+
+      [type="checkbox"]:indeterminate {
+        --background-color: var(--primary);
+        --border-color: var(--primary);
+        background-image: var(--icon-minus);
+        background-position: center;
+        background-size: 0.75em auto;
+        background-repeat: no-repeat;
+      }
+
+      [type="radio"] {
+        border-radius: 50%;
+      }
+
+      [type="radio"]:checked,
+      [type="radio"]:checked:active,
+      [type="radio"]:checked:focus {
+        --background-color: var(--primary-inverse);
+        border-width: 0.35em;
+        background-image: none;
+      }
+
+      :where(#mount) [type="checkbox"][role="switch"] {
+        --background-color: var(--switch-background-color);
+        --border-color: var(--switch-background-color);
+        --color: var(--switch-color);
+        width: 2.25em;
+        height: 1.25em;
+        border: var(--border-width) solid var(--border-color);
+        border-radius: 1.25em;
+        background-color: var(--background-color);
+        line-height: 1.25em;
+      }
+
+      :where(#mount) [type="checkbox"][role="switch"]:focus {
+        --background-color: var(--switch-background-color);
+        --border-color: var(--switch-background-color);
+      }
+
+      :where(#mount) [type="checkbox"][role="switch"]:checked {
+        --background-color: var(--switch-checked-background-color);
+        --border-color: var(--switch-checked-background-color);
+      }
+
+      :where(#mount) [type="checkbox"][role="switch"]:before {
+        display: block;
+        width: calc(1.25em - (var(--border-width) * 2));
+        height: 100%;
+        border-radius: 50%;
+        background-color: var(--color);
+        content: "";
+        transition: margin 0.1s ease-in-out;
+      }
+
+      :where(#mount) [type="checkbox"][role="switch"]:checked {
+        background-image: none;
+      }
+
+      :where(#mount) [type="checkbox"][role="switch"]:checked::before {
+        margin-left: calc(1.125em - var(--border-width));
+        -webkit-margin-start: calc(1.125em - var(--border-width));
+        margin-inline-start: calc(1.125em - var(--border-width));
+      }
+
+      :where(#mount) [type="checkbox"][aria-invalid="false"],
+      :where(#mount) [type="checkbox"]:checked[aria-invalid="false"],
+      :where(#mount) [type="radio"][aria-invalid="false"],
+      :where(#mount) [type="radio"]:checked[aria-invalid="false"],
+      :where(#mount) [type="checkbox"][role="switch"][aria-invalid="false"],
+      :where(#mount) [type="checkbox"][role="switch"]:checked[aria-invalid="false"] {
+        --border-color: var(--form-element-valid-border-color);
+      }
+
+      :where(#mount) [type="checkbox"][aria-invalid="true"],
+      :where(#mount) [type="checkbox"]:checked[aria-invalid="true"],
+      :where(#mount) [type="radio"][aria-invalid="true"],
+      :where(#mount) [type="radio"]:checked[aria-invalid="true"],
+      :where(#mount) [type="checkbox"][role="switch"][aria-invalid="true"],
+      :where(#mount) [type="checkbox"][role="switch"]:checked[aria-invalid="true"] {
+        --border-color: var(--form-element-invalid-border-color);
+      }
+
+      .text-black {
+        color: var(--text-black-2);
+      }
+
+      .text-gray-2 {
+        color: var(--text-gray-2);
+      }
+
+      .text-gray-6 {
+        color: var(--text-gray-6);
+      }
+
+      .text-gray-9 {
+        color: var(--text-gray-9);
+      }
+
+      .text-gray-c2 {
+        color: var(--text-gray-c2);
+      }
+
+      .pt-4 {
+        padding-top: 16px;
+      }
+
+      .p-2 {
+        padding: 8px;
+      }
+
+      .pl-5 {
+        padding-left: 48px;
+      }
+
+      .p-0 {
+        padding: 0;
+      }
+
+      .pl-2 {
+        padding-left: 8px;
+      }
+
+      .pl-4 {
+        padding-left: 24px;
+      }
+
+      .pt-2 {
+        padding-top: 8px;
+      }
+
+      .pb-2 {
+        padding-bottom: 8px;
+      }
+
+      .pb-4 {
+        padding-bottom: 16px;
+      }
+
+      .pb-5 {
+        padding-bottom: 20px;
+      }
+
+      .pr-5 {
+        padding-right: 48px;
+      }
+
+      .text-sm {
+        font-size: 13px;
+      }
+
+      .text-base {
+        font-size: 16px;
+      }
+
+      .w-full {
+        width: 100%;
+      }
+
+      .flex {
+        display: flex;
+      }
+
+      .flex-row {
+        flex-direction: row;
+      }
+
+      .flex-wrap {
+        flex-wrap: wrap;
+      }
+
+      .flex-end {
+        justify-content: flex-end;
+      }
+
+      .flex-grow {
+        flex-grow: 1;
+      }
+
+      .justify-between {
+        justify-content: space-between;
+      }
+
+      .mb-0 {
+        margin-bottom: 0px;
+      }
+
+      .mb-2 {
+        margin-bottom: 8px;
+      }
+
+      .mb-4 {
+        margin-bottom: 16px;
+      }
+
+      .mb-3 {
+        margin-bottom: 12px;
+      }
+
+      .inline-block {
+        display: inline-block;
+      }
+
+      .py-2 {
+        padding-top: 8px;
+        padding-bottom: 8px;
+      }
+
+      .py-2-5 {
+        padding-top: 6px;
+        padding-bottom: 6px;
+      }
+
+      .mt-0 {
+        margin-top: 0;
+      }
+
+      .mt-2 {
+        margin-top: 8px;
+      }
+
+      .mt-3 {
+        margin-top: 12px;
+      }
+
+      .mt-4 {
+        margin-top: 16px;
+      }
+
+      .mt-5 {
+        margin-top: 20px;
+      }
+
+      .mt-6 {
+        margin-top: 24px;
+      }
+
+      .mb-1 {
+        margin-bottom: 4px;
+      }
+
+      .ml-4 {
+        margin-left: 24px;
+      }
+
+      .ml-3 {
+        margin-left: 16px;
+      }
+
+      .ml-2 {
+        margin-left: 8px;
+      }
+
+      .ml-1 {
+        margin-left: 4px;
+      }
+
+      .mr-1 {
+        margin-right: 4px;
+      }
+
+      .mr-2 {
+        margin-right: 8px;
+      }
+
+      .mr-3 {
+        margin-right: 16px;
+      }
+
+      .mx-2 {
+        margin-left: 8px;
+        margin-right: 8px;
+      }
+
+      .pl-3 {
+        padding-left: 12px;
+      }
+
+      .pr-3 {
+        padding-right: 12px;
+      }
+
+      .p-3 {
+        padding: 12px;
+      }
+
+      .px-1 {
+        padding-left: 4px;
+        padding-right: 4px;
+      }
+
+      .px-3 {
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+
+      .pt-3 {
+        padding-top: 12px;
+      }
+
+      .px-6 {
+        padding-left: 18px;
+        padding-right: 18px;
+      }
+
+      .px-4 {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      .pt-6 {
+        padding-top: 20px;
+      }
+
+      .py-3 {
+        padding-top: 12px;
+        padding-bottom: 12px;
+      }
+
+      .py-0 {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+
+      .left-auto {
+        left: auto !important;
+      }
+
+      .max-h-28 {
+        max-height: 112px;
+      }
+
+      .max-h-30 {
+        max-height: 120px;
+      }
+
+      .overflow-y-scroll {
+        overflow-y: scroll;
+      }
+
+      .text-xs {
+        font-size: 12px;
+      }
+
+      .inline-flex {
+        display: inline-flex;
+      }
+
+      .flex-1 {
+        flex: 1;
+      }
+
+      .flex-3 {
+        flex: 3;
+      }
+
+      .flex-4 {
+        flex: 4;
+      }
+
+      .flex-2 {
+        flex: 2;
+      }
+
+      .items-center {
+        align-items: center;
+      }
+
+      .max-content {
+        width: max-content;
+      }
+
+      .justify-center {
+        justify-content: center;
+      }
+
+      .items-end {
+        align-items: flex-end;
+      }
+
+      .items-baseline {
+        align-items: baseline;
+      }
+
+      .my-5 {
+        margin-top: 48px;
+        margin-bottom: 48px;
+      }
+
+      .my-4 {
+        margin-top: 24px;
+        margin-bottom: 24px;
+      }
+
+      .my-3 {
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
+
+      .pt-3 {
+        padding-top: 12px;
+      }
+
+      .px-3 {
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+
+      .pt-2 {
+        padding-top: 8px;
+      }
+
+      .px-2 {
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+
+      .pt-1 {
+        padding-top: 4px;
+      }
+
+      .px-1 {
+        padding-left: 4px;
+        padding-right: 4px;
+      }
+
+      .pb-2 {
+        padding-bottom: 8px;
+      }
+
+      .justify-end {
+        justify-content: flex-end;
+      }
+
+      .w-auto {
+        width: auto;
+      }
+
+      .shrink-0 {
+        flex-shrink: 0;
+      }
+
+      .text-right {
+        text-align: right;
+      }
+
+      .clickable {
+        cursor: pointer;
+      }
+
+      .close {
+        cursor: pointer;
+        width: 16px;
+        height: 16px;
+        background-image: var(--icon-close);
+        background-position: center;
+        background-size: auto 1rem;
+        background-repeat: no-repeat;
+        opacity: 0.5;
+        transition: opacity var(--transition);
+      }
+
+      .padding-two-column {
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+
+      .muted {
+        color: #999;
+      }
+
+      .text-label {
+        color: #666;
+      }
+
+      .display-none {
+        display: none;
+      }
+
+      /* dark use #18232c */
+      @media (prefers-color-scheme: dark) {
+        .text-label {
+          color: #9ca3af;
+        }
+      }
+
+      .text-decoration-none {
+        text-decoration: none;
+      }
+
+      .text-decoration-none:is([aria-current], :hover, :active, :focus),
+      [role="link"]:is([aria-current], :hover, :active, :focus) {
+        --text-decoration: none !important;
+        background-color: transparent !important;
+      }
+
+      .text-overflow-ellipsis {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+
+      .max-w-20 {
+        max-width: 180px;
+        white-space: nowrap;
+      }
+
+      [data-theme="light"],
+      #mount:not([data-theme="dark"]) {
+        --popup-footer-background-color: #e8eaeb;
+        --popup-content-background-color: #ffffff;
+        --popup-item-background-color: #f3f5f6;
+        --popup-item-hover-background-color: #eaeced;
+        --popup-trial-pro-background-color: #f9fbfc;
+        --service-select-content-shadow: 0px 2px 12px 0px rgba(75, 76, 77, 0.2);
+        --service-select-border-color: #fafafa;
+        --service-select-selected-background-color: #f3f5f6;
+        --download-app-background: #f3f5f6;
+      }
+
+      [data-theme="dark"] {
+        --popup-footer-background-color: #0d0d0d;
+        --popup-content-background-color: #191919;
+        --popup-item-background-color: #272727;
+        --popup-item-hover-background-color: #333333;
+        --popup-trial-pro-background-color: #222222;
+        --service-select-content-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.9);
+        --service-select-border-color: #2c2c2c;
+        --service-select-selected-background-color: #333333;
+        --download-app-background: #333;
+      }
+
+      #mount {
+        min-width: 268px;
+      }
+
+      body {
+        padding: 0;
+        margin: 0 auto;
+        min-width: 268px;
+        border-radius: 10px;
+      }
+
+      .popup-container {
+        font-size: 16px;
+        --font-size: 16px;
+        color: #666;
+        background-color: var(--popup-footer-background-color);
+        width: 316px;
+        min-width: 316px;
+      }
+
+      .popup-content {
+        background-color: var(--popup-content-background-color);
+        border-radius: 0px 0px 12px 12px;
+        padding: 16px 20px;
+      }
+
+      .immersive-translate-popup-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        touch-action: none;
+      }
+
+      .immersive-translate-popup-wrapper {
+        background: var(--background-color);
+        border-radius: 10px;
+        border: 1px solid var(--muted-border-color);
+      }
+
+      .main-button {
+        font-size: 15px;
+        vertical-align: middle;
+        border-radius: 12px;
+        padding: unset;
+        height: 44px;
+        line-height: 44px;
+      }
+
+      select.language-select,
+      select.translate-service,
+      select.min-select {
+        --form-element-spacing-horizontal: 0;
+        margin-bottom: 0px;
+        max-width: unset;
+        flex: 1;
+        overflow: hidden;
+        font-size: 13px;
+        border: none;
+        border-radius: 8px;
+        padding-right: 30px;
+        padding-left: 0px;
+        background-position: center right 12px;
+        background-size: 16px auto;
+        background-image: var(--icon-xia);
+        text-overflow: ellipsis;
+        color: var(--text-gray-2);
+        background-color: transparent;
+        box-shadow: unset !important;
+        cursor: pointer;
+      }
+
+      select.more {
+        background-position: center right;
+        padding-right: 20px;
+      }
+
+      select.translate-service {
+        color: var(--text-black-2);
+      }
+
+      .min-select-container.disabled {
+        opacity: 0.5;
+        pointer-events: none;
+      }
+
+      .popup-footer {
+        background-color: var(--popup-footer-background-color);
+        height: 40px;
+      }
+
+      .language-select-container {
+        position: relative;
+        width: 100%;
+        background-color: var(--popup-item-background-color);
+        height: 55px;
+        border-radius: 12px;
+      }
+
+      select.language-select {
+        color: var(--text-black-2);
+        font-size: 14px;
+        padding: 8px 24px 24px 16px;
+        position: absolute;
+        border-radius: 12px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+      }
+
+      .language-select-container label {
+        position: absolute;
+        bottom: 10px;
+        left: 16px;
+        font-size: 12px;
+        color: var(--text-gray-9);
+        line-height: 12px;
+        margin: 0;
+      }
+
+      .translation-service-container {
+        background-color: var(--popup-item-background-color);
+        border-radius: 12px;
+      }
+
+      .min-select-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 44px;
+        background-color: var(--popup-item-background-color);
+        padding-left: 16px;
+      }
+
+      .min-select-container:first-child {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+
+      .min-select-container:last-child {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+
+      .min-select-container:only-child {
+        border-radius: 10px;
+      }
+
+      .translate-mode {
+        width: 44px;
+        height: 44px;
+        border-radius: 22px;
+        background-color: var(--popup-item-background-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        cursor: pointer;
+      }
+
+      .translate-mode svg {
+        fill: var(--text-gray-2);
+      }
+
+      .widgets-container {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        width: 100%;
+        gap: 9px;
+      }
+
+      /* 当只有两个小组件时的样式优化 */
+      .widgets-container.widgets-two-items {
+        gap: 16px;
+      }
+
+      .widgets-container.widgets-two-items .widget-item {
+        flex: 0 1 auto;
+        min-width: 93px;
+        max-width: 120px;
+      }
+
+      .widget-item {
+        display: flex;
+        max-width: 93px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--popup-item-background-color);
+        font-size: 12px;
+        min-height: 44px;
+        height: 100%;
+        border-radius: 8px;
+        cursor: pointer;
+        flex: 1;
+        padding: 8px 4px;
+        text-align: center;
+      }
+
+      .widget-icon-text {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: var(--text-gray-2);
+      }
+
+      .widgets-container svg {
+        fill: var(--text-gray-2);
+        color: var(--text-gray-2);
+      }
+
+      .share-button-container {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        padding: 2px 3px 0 8px;
+      }
+
+      .share-button-container svg {
+        fill: var(--text-gray-9);
+      }
+
+      .min-select-container:hover,
+      .language-select-container:hover,
+      .widget-item:hover,
+      .translate-mode:hover {
+        background-color: var(--popup-item-hover-background-color);
+      }
+
+      .main-button:hover {
+        background-color: #f5508f;
+      }
+
+      .share-button-container:hover {
+        background-color: var(--popup-item-background-color);
+        border-radius: 6px;
+      }
+
+      .error-boundary {
+        background: #fff2f0;
+        border: 1px solid #ffccc7;
+        display: flex;
+        padding: 12px;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.88);
+        word-break: break-all;
+        margin: 12px;
+        border-radius: 12px;
+        flex-direction: column;
+      }
+
+      .upgrade-pro {
+        border-radius: 11px;
+        background: linear-gradient(57deg, #272727 19.8%, #696969 82.2%);
+        padding: 2px 8px;
+        transform: scale(0.85);
+      }
+
+      .upgrade-pro span {
+        background: linear-gradient(180deg, #ffeab4 17.65%, #f8c235 85.29%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 12px;
+        margin-left: 4px;
+      }
+
+      .upgrade-pro svg {
+        margin-top: -2px;
+      }
+
+      .upgrade-pro:hover {
+        background: linear-gradient(57deg, #3d3d3d 19.8%, #949494 82.2%);
+      }
+
+      .border-bottom-radius-0 {
+        border-bottom-left-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+      }
+
+      .trial-pro-container {
+        border-radius: 0px 0px 12px 12px;
+        background: var(--popup-trial-pro-background-color);
+        display: flex;
+        align-items: center;
+        height: 44px;
+        padding-left: 16px;
+        padding-right: 12px;
+        font-size: 12px;
+      }
+
+      .trial-pro-container label {
+        line-height: 13px;
+        color: var(--text-black-2);
+      }
+
+      .trial-pro-container img {
+        margin-left: 5px;
+      }
+
+      .cursor-pointer {
+        cursor: pointer;
+      }
+
+      .upgrade-pro-discount-act {
+        height: 25px;
+        display: flex;
+        padding: 0 4px;
+        align-items: center;
+        border-radius: 15px;
+        background: linear-gradient(90deg,
+            #cefbfa 11.33%,
+            #d7f56f 63.75%,
+            #fccd5e 100%);
+        transform: scale(0.9);
+        box-shadow: 0px 1.8px 3.6px 0px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+      }
+
+      .upgrade-pro-discount-act span {
+        font-size: 12px;
+        font-weight: 700;
+        margin-left: 4px;
+        color: #222222;
+      }
+
+      .upgrade-pro-discount-act:hover {
+        text-decoration: unset;
+        background: linear-gradient(90deg,
+            #e2fffe 11.33%,
+            #e6ff91 63.75%,
+            #ffdf93 100%);
+      }
+
+      .custom-select-container {
+        width: 200px;
+        position: relative;
+        flex: 1;
+      }
+
+      #translation-service-select {
+        padding-right: 12px;
+        padding-left: 6px;
+      }
+
+      .custom-select-content {
+        border-radius: 12px;
+        background: var(--popup-content-background-color);
+        box-shadow: var(--service-select-content-shadow);
+        border: 1px solid var(--service-select-border-color);
+        padding: 4px 5px;
+        position: absolute;
+        left: -10px;
+        right: 0;
+        z-index: 100;
+        overflow-y: auto;
+      }
+
+      .custom-select-item.default {
+        width: 100%;
+        padding: 0;
+      }
+
+      .custom-select-item {
+        font-size: 13px;
+        padding: 5px 6px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        color: var(--text-black-2);
+        width: auto;
+        overflow: hidden;
+        height: 30px;
+        line-height: 30px;
+      }
+
+      .custom-select-item-img {
+        width: 20px;
+        height: 20px;
+        margin-right: 4px;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        .custom-select-item-img {
+          margin-right: 6px;
+        }
+      }
+
+      .custom-select-content .custom-select-item.selected,
+      .custom-select-content .custom-select-item:hover {
+        background: var(--service-select-selected-background-color);
+      }
+
+      .custom-select-item>span {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .custom-select-item-pro {
+        font-size: 12px;
+        margin-left: 6px;
+        display: flex;
+      }
+
+      .custom-select-item-pro img {
+        margin: 0 3px;
+        width: 20px;
+        flex-shrink: 0;
+      }
+
+      .custom-select-group-header {
+        font-size: 12px;
+        font-weight: 500;
+        color: var(--text-gray-9);
+        padding: 6px 8px 4px;
+        margin-top: 2px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+
+      .more-container {
+        position: relative;
+      }
+
+      .new-menu-indicator {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background-color: #ef3434;
+        border-radius: 50%;
+        right: 18px;
+        top: 4px;
+      }
+
+      .download-app {
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        border-radius: 8px;
+        background: var(--download-app-background);
+        padding: 4px 8px;
+        color: var(--text-gray-6);
+        font-size: 12px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+      }
+
+      /* Popup 动画效果 */
+      @keyframes popup-fade-in {
+        from {
+          opacity: 0;
+          transform: translateY(10px) scale(0.95);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
+
+      @keyframes popup-fade-out {
+        from {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+
+        to {
+          opacity: 0;
+          transform: translateY(10px) scale(0.95);
+        }
+      }
+
+      .popup-generic-content {
+        animation: popup-fade-in 0.2s ease-out;
+      }
+
+      .popup-generic-content.hiding {
+        animation: popup-fade-out 0.15s ease-in;
+      }
+
+      select.min-select {
+        --form-element-spacing-horizontal: 0;
+        max-width: 128px;
+        overflow: hidden;
+        color: var(--primary);
+        font-size: 13px;
+        border: none;
+        padding: 0;
+        padding-right: 20px;
+        text-overflow: ellipsis;
+        color: var(--color);
+      }
+
+      select.min-select-secondary {
+        color: var(--color);
+      }
+
+      select.min-select:focus {
+        outline: none;
+        border: none;
+        --box-shadow: none;
+      }
+
+      select.min-select-left {
+        padding-right: 0px;
+        /* padding-left: 24px; */
+        /* background-position: center left 0; */
+        text-overflow: ellipsis;
+        text-align: left;
+      }
+
+      select.transform-padding-left {
+        padding-left: 12px;
+        transform: translateX(-12px);
+        background-position: center right 0px;
+      }
+
+      select.text-gray-6 {
+        color: var(--text-gray-6);
+      }
+
+      /* dark use black, for windows */
+      @media (prefers-color-scheme: dark) {
+
+        select.language-select option,
+        select.translate-service option,
+        select.min-select option {
+          background-color: #666666;
+        }
+      }
+
+      select.min-select-no-arrow {
+        background-image: none;
+        padding-right: 0;
+      }
+
+
+
+      .activity-tips {
+        border-radius: 8px;
+        padding: 0px 8px;
+        min-height: 28px;
+        background: linear-gradient(83deg, #FACCDE -0.87%, #FCE7EF 43.13%, #FBD6E4 72.08%, #FFB3D1 96.34%);
+        gap: 2px;
+        color: #333;
+        cursor: pointer;
+        gap: 4px;
+      }
+
+      .activity-tips-icon {
+        width: 18px;
+        height: 18px;
+        flex-shrink: 0;
+      }
+
+      .countdown-container {
+        min-width: 50px;
+        text-align: left;
+        font-weight: 600;
+        font-size: 12px;
+        letter-spacing: 0.01em;
+      }
+
+      .activity-tips-text {
+        font-weight: 600;
+        max-width: 100px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      html {
+        font-size: 17px;
+      }
+
+      @media print {
+        .imt-fb-container {
+          display: none !important;
+        }
+      }
+
+      #mount {
+        position: absolute;
+        display: none;
+        min-width: 250px;
+        height: auto;
+        --font-size: 17px;
+        font-size: 17px;
+      }
+
+      /* float-ball */
+      .imt-fb-container {
+        position: fixed;
+        padding: 0;
+        top: 335px;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        display: none;
+        direction: ltr;
+        background-color: transparent !important;
+      }
+
+      .imt-fb-container:hover .imt-manga-button {
+        opacity: 1;
+      }
+
+      .imt-fb-container.left {
+        align-items: flex-start;
+        left: 0;
+      }
+
+      .imt-fb-container.right {
+        align-items: flex-end;
+        right: 0;
+      }
+
+      .imt-fb-btn {
+        cursor: pointer;
+        background: var(--float-ball-more-button-background-color);
+        height: 36px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.08);
+      }
+
+      .imt-fb-btn.left {
+        border-top-right-radius: 36px;
+        border-bottom-right-radius: 36px;
+        padding-left: 3px;
+      }
+
+      .imt-fb-btn.right {
+        border-top-left-radius: 36px;
+        border-bottom-left-radius: 36px;
+        padding-right: 3px;
+      }
+
+      .imt-fb-btn.mini.left {
+        transform: translateX(-22px);
+      }
+
+      .imt-fb-btn.mini.right {
+        transform: translateX(22px);
+      }
+
+      .imt-fb-btn.mini.active {
+        transform: translateX(0);
+      }
+
+      .imt-fb-btn div {
+        height: 36px;
+        display: inline-flex;
+        align-items: center;
+        position: relative;
+      }
+
+      .imt-fb-btn .imt-fb-hit-area {
+        position: absolute;
+        top: 0;
+        height: 36px;
+        bottom: -6px;
+        left: -6px;
+        right: -6px;
+        background: transparent;
+      }
+
+      .imt-fb-btn.mini.right .imt-fb-hit-area {
+        left: -10px;
+      }
+
+      .imt-fb-btn.mini.left .imt-fb-hit-area {
+        right: -10px;
+      }
+
+      .imt-fb-btn.left div {
+        border-top-right-radius: 34px;
+        border-bottom-right-radius: 34px;
+        justify-content: flex-end;
+      }
+
+      .imt-fb-btn.right div {
+        border-top-left-radius: 34px;
+        border-bottom-left-radius: 34px;
+      }
+
+      .imt-fb-logo-img {
+        width: 20px;
+        height: 20px;
+        margin: 0 10px;
+      }
+
+      .imt-fb-logo-img-big-bg {
+        width: 28px;
+        height: 28px;
+        margin: 0;
+        background-color: #ed6d8f;
+        border-radius: 50%;
+        margin: 0 5px;
+      }
+
+      .imt-float-ball-translated {
+        position: absolute;
+        width: 11px;
+        height: 11px;
+        bottom: 4px;
+        right: 4px;
+      }
+
+      .btn-animate {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        -webkit-transition: -webkit-transform ease-out 250ms;
+        transition: -webkit-transform ease-out 250ms;
+        transition: transform ease-out 250ms;
+        transition: transform ease-out 250ms, -webkit-transform ease-out 250ms;
+      }
+
+      .imt-fb-setting-btn {
+        margin-right: 18px;
+        width: 28px;
+        height: 28px;
+      }
+
+      .immersive-translate-popup-wrapper {
+        background: var(--background-color);
+        border-radius: 20px;
+        box-shadow: 2px 10px 24px 0px #0e121614;
+        border: none;
+      }
+
+      .popup-container {
+        border-radius: 20px;
+      }
+
+      .popup-content {
+        border-radius: 20px 20px 12px 12px;
+      }
+
+      .popup-footer {
+        border-radius: 20px;
+      }
+
+      .imt-fb-close-button {
+        cursor: pointer;
+        position: absolute;
+        left: -10px;
+        bottom: -20px;
+      }
+
+      .imt-fb-container.left .imt-fb-close-button {
+        left: auto;
+        right: -10px;
+      }
+
+      .imt-fb-close-content {
+        padding: 22px;
+        width: 320px;
+        pointer-events: all;
+      }
+
+      .imt-fb-close-title {
+        font-weight: 500;
+        color: var(--text-black-2);
+      }
+
+      .imt-fb-close-radio-content {
+        background-color: var(--background-light-green);
+        padding: 8px 20px;
+      }
+
+      .imt-fb-radio-sel,
+      .imt-fb-radio-nor {
+        width: 16px;
+        height: 16px;
+        border-radius: 8px;
+        flex-shrink: 0;
+      }
+
+      .imt-fb-radio-sel {
+        border: 2px solid var(--primary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .imt-fb-radio-sel div {
+        width: 8px;
+        height: 8px;
+        border-radius: 4px;
+        background-color: var(--primary);
+      }
+
+      .imt-fb-radio-nor {
+        border: 2px solid var(--input-border-strong);
+      }
+
+      .imt-fb-primary-btn {
+        background-color: var(--primary);
+        width: 72px;
+        height: 32px;
+        color: white;
+        border-radius: 8px;
+        text-align: center;
+        line-height: 32px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .imt-fb-default-btn {
+        border: 1px solid var(--primary);
+        width: 72px;
+        height: 32px;
+        border-radius: 8px;
+        color: var(--primary);
+        line-height: 32px;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .imt-fb-guide-container {
+        width: 312px;
+        transform: translateY(-45%);
+      }
+
+      .imt-fb-guide-bg {
+        position: absolute;
+        left: 30px;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+        height: 100%;
+        width: 90%;
+      }
+
+      .imt-fb-guide-bg.left {
+        transform: scaleX(-1);
+      }
+
+      .imt-fb-guide-content {
+        margin: 16px -30px 80px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .imt-fb-guide-content.left {
+        margin: 16px 21px 60px 32px;
+      }
+
+      .imt-fb-guide-img {
+        width: 220px;
+        height: 112px;
+      }
+
+      .imt-fb-guide-message {
+        font-size: 14px;
+        line-height: 28px;
+        color: #333333;
+        white-space: pre-wrap;
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+
+      .imt-manga-guide-message {
+        font-size: 16px;
+        line-height: 24px;
+        color: #333333;
+        text-align: center;
+        font-weight: 500;
+        margin-bottom: 12px;
+      }
+
+      .imt-fb-guide-button {
+        margin-top: 16px;
+        line-height: 40px;
+        height: 40px;
+        padding: 0 20px;
+        width: unset;
+      }
+
+      .imt-fb-side {
+        border-radius: 50%;
+        cursor: pointer;
+        pointer-events: all;
+        position: relative;
+      }
+
+      .imt-fb-side {
+        margin: 10px 0;
+      }
+
+      .imt-fb-side::before,
+      .imt-manga-button::before,
+      .imt-fb-round-button::before {
+        content: "";
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        bottom: 2px;
+        left: 2px;
+        border-radius: 50%;
+        background-color: transparent;
+        transition: background-color 0.15s ease;
+      }
+
+      .imt-fb-side:hover::before,
+      .imt-manga-button:hover::before,
+      .imt-fb-round-button:hover::before {
+        background-color: var(--float-ball-more-button-hover-color);
+      }
+
+      .imt-fb-new-badge {
+        width: 26px;
+        height: 14px;
+        padding: 3px;
+        background-color: #f53f3f;
+        border-radius: 4px;
+        position: absolute;
+        top: -5px;
+        right: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .imt-fb-side * {
+        pointer-events: all;
+      }
+
+      .imt-fb-pin-icon {
+        position: absolute;
+        left: -16px;
+        bottom: -12px;
+        opacity: 0;
+        cursor: pointer;
+      }
+
+      .imt-fb-container.left .imt-fb-pin-icon {
+        left: auto;
+        right: -16px;
+      }
+
+      .imt-fb-side:hover .imt-fb-pin-icon {
+        opacity: 1;
+      }
+
+      .imt-fb-more-button {
+        width: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+
+      /* Sheet.css */
+      .immersive-translate-sheet {
+        position: fixed;
+        transform: translateY(100%);
+        /* Start off screen */
+        left: 0;
+        right: 0;
+        background-color: var(--background-color);
+        transition: transform 0.3s ease-out;
+        /* Smooth slide transition */
+        box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
+        /* Ensure it's above other content */
+        bottom: 0;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        overflow: hidden;
+      }
+
+      .immersive-translate-sheet.visible {
+        transform: translateY(0);
+      }
+
+      .immersive-translate-sheet-backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transition: opacity 0.3s ease-out;
+      }
+
+      .immersive-translate-sheet-backdrop.visible {
+        opacity: 1;
+      }
+
+      .popup-container-sheet {
+        max-width: 100vw;
+        width: 100vw;
+      }
+
+      .imt-no-events svg * {
+        pointer-events: none !important;
+      }
+
+      .imt-manga-button {
+        width: 36px;
+        height: 36px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        pointer-events: all;
+        margin: 0 0 10px 0;
+        background-color: var(--float-ball-more-button-background-color);
+        border-radius: 50%;
+        box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
+        right: 8px;
+      }
+
+      .imt-manga-feedback {
+        cursor: pointer;
+        margin-bottom: 10px;
+      }
+
+      .imt-fb-round-button {
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        background: var(--float-ball-more-button-background-color);
+        border-radius: 50%;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.08);
+        position: relative;
+      }
+
+      .imt-fb-round-button>svg {
+        z-index: 1;
+      }
+
+      .imt-fb-upgrade-button {
+        cursor: pointer;
+        margin-top: 10px;
+      }
+
+      .imt-manga-translated {
+        position: absolute;
+        left: 24px;
+        top: 20px;
+      }
+
+      .imt-float-ball-loading {
+        animation: imt-loading-animation 0.6s infinite linear !important;
+      }
+
+      .imt-manga-guide-bg {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+        width: 100%;
+        transform: translateY(-50%);
+      }
+
+      .imt-manga-guide-content {
+        position: absolute;
+        top: 15px;
+        left: 0;
+        right: 0;
+        margin: 0 40px 0;
+      }
+
+      .img-manga-guide-button {
+        width: fit-content;
+        margin: 0 auto;
+      }
+
+      .img-manga-close {
+        position: absolute;
+        bottom: -200px;
+        width: 32px;
+        height: 32px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        cursor: pointer;
+      }
+
+      .imt-fb-container.dragging .imt-manga-button,
+      .imt-fb-container.dragging .btn-animate:not(.imt-fb-btn) {
+        display: none !important;
+      }
+
+      .imt-fb-container.dragging .imt-fb-btn {
+        border-radius: 50% !important;
+        width: 36px !important;
+        height: 36px !important;
+        display: flex !important;
+        align-items: center !important;
+        cursor: move !important;
+      }
+
+      .imt-fb-container.dragging .imt-fb-btn div {
+        border-radius: 50% !important;
+        width: 36px !important;
+        height: 36px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 0 !important;
+      }
+
+      .imt-fb-container.dragging .imt-fb-btn.left,
+      .imt-fb-container.dragging .imt-fb-btn.right {
+        border-radius: 50% !important;
+      }
+
+      .imt-fb-container.dragging .imt-fb-btn.left div,
+      .imt-fb-container.dragging .imt-fb-btn.right div {
+        border-radius: 50% !important;
+      }
+
+      .imt-fb-container.dragging .imt-fb-logo-img {
+        margin: 0 !important;
+      }
+
+      .imt-fb-container.dragging .imt-float-ball-translated {
+        right: 2px !important;
+        bottom: 2px !important;
+      }
+
+      @-webkit-keyframes imt-loading-animation {
+        from {
+          -webkit-transform: rotate(0deg);
+        }
+
+        to {
+          -webkit-transform: rotate(359deg);
+        }
+      }
+
+      @keyframes imt-loading-animation {
+        from {
+          transform: rotate(0deg);
+        }
+
+        to {
+          transform: rotate(359deg);
+        }
+      }
+
+      .imt-fb-icon {
+        color: #666666;
+      }
+
+      [data-theme="dark"] .imt-fb-icon {
+        color: #b3b3b3;
+      }
+
+      [data-theme="light"] .imt-fb-icon {
+        color: #666666;
+      }
+
+      /* 悬浮球设置弹窗样式 */
+      .imt-fb-setting-wrapper {
+        border-radius: 12px;
+        box-shadow: 2px 10px 24px 0px rgba(0, 0, 0, 0.06);
+      }
+
+      .imt-fb-setting-content {
+        padding: 16px;
+        width: 350px;
+        pointer-events: all;
+      }
+
+      .imt-fb-setting-title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--text-black-2);
+      }
+
+      .imt-fb-setting-preview {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 24px 0;
+      }
+
+      .imt-fb-preview-wrapper {
+        display: flex;
+        border-radius: 12px;
+        overflow: hidden;
+      }
+
+      .imt-fb-preview-item {
+        width: 99px;
+        height: 57px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .imt-fb-preview-item.light {
+        background-color: #f3f5f6;
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 12px;
+      }
+
+      .imt-fb-preview-item.dark {
+        background-color: #444;
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+      }
+
+      .imt-fb-preview-ball {
+        height: 36px;
+        display: flex;
+        align-items: center;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.08);
+        transition: all 0.2s ease;
+      }
+
+      .imt-fb-preview-ball.light {
+        background-color: #fff;
+        border-top-left-radius: 36px;
+        border-bottom-left-radius: 36px;
+      }
+
+      .imt-fb-preview-ball.dark {
+        background-color: #111;
+        border-top-left-radius: 36px;
+        border-bottom-left-radius: 36px;
+      }
+
+      .imt-fb-preview-ball.full {
+        width: 41px;
+        justify-content: center;
+      }
+
+      .imt-fb-preview-ball.mini {
+        width: 41px;
+        justify-content: center;
+        transform: translateX(21px);
+      }
+
+      .imt-fb-preview-ball .imt-fb-preview-logo {
+        flex-shrink: 0;
+      }
+
+      /* 选项区域 */
+      .imt-fb-setting-options {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .imt-fb-setting-option-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 4px;
+      }
+
+      .imt-fb-setting-option-label {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        color: var(--text-black-2);
+      }
+
+      /* Toggle 开关样式 */
+      .imt-fb-toggle {
+        width: 30px;
+        height: 18px;
+        background-color: var(--switch-background-color);
+        border-radius: 24px;
+        position: relative;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+        flex-shrink: 0;
+      }
+
+      .imt-fb-toggle.checked {
+        background-color: var(--primary);
+      }
+
+      .imt-fb-toggle.disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+
+      .imt-fb-toggle-thumb {
+        width: 14px;
+        height: 14px;
+        background-color: var(--switch-color);
+        border-radius: 50%;
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        transition: transform 0.2s ease;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.08);
+      }
+
+      .imt-fb-toggle.checked .imt-fb-toggle-thumb {
+        transform: translateX(12px);
+      }
+
+      .imt-fb-setting-hide-options {
+        background-color: var(--background-light-green);
+        padding: 8px 20px;
+        border-radius: 8px;
+        margin-top: 8px;
+      }
+
+      .imt-fb-setting-save-btn {
+        background-color: var(--primary);
+        color: white;
+        border-radius: 8px;
+        text-align: center;
+        line-height: 45px;
+        height: 45px;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        margin-top: 16px;
+        transition: opacity 0.2s ease;
+      }
+
+      .imt-fb-setting-save-btn:hover {
+        opacity: 0.9;
+      }
+
+      .imt-fb-setting-save-btn:active {
+        opacity: 0.8;
+      }
+    </style>
+    <div id="mount" style="display: block;">
+      <div hidden="" id="immersive-translate-popup-overlay" class="immersive-translate-popup-overlay"
+        style="z-index: 2147483647; background-color: rgba(0, 0, 0, 0.5);">
+        <div class="immersive-translate-popup-wrapper"
+          style="position: fixed; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%);"></div>
+      </div>
+    </div>
+  </template></div>
+
+</html>
